@@ -1,4 +1,3 @@
-
 name: Build Spin Win APK
 
 on:
@@ -12,6 +11,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -41,5 +41,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: spinwin-debug-apk
-          path: SpinWinAndroid/app/build/outputs/apk/debug/ap
-          p-debug.apk
+          path: SpinWinAndroid/app/build/outputs/apk/debug/app-debug.apk
